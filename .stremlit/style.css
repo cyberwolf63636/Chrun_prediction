@@ -1,0 +1,164 @@
+/* Import Material Icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Modern Glass Morphism Theme */
+/* Navigation Icons */
+[data-testid="stSidebarNav"] .css-17lntkn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    margin: 0.3rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-testid="stSidebarNav"] .css-17lntkn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(4px);
+    color: rgba(255, 255, 255, 1);
+}
+
+[data-testid="stSidebarNav"] .css-17lntkn::before {
+    font-family: 'Material Icons';
+    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+[data-testid="stSidebarNav"] a[href="/Data_Upload"]::before { content: "upload_file"; }
+[data-testid="stSidebarNav"] a[href="/Predictions"]::before { content: "analytics"; }
+[data-testid="stSidebarNav"] a[href="/Visualizations"]::before { content: "bar_chart"; }
+[data-testid="stSidebarNav"] a[href="/Customer_Segmentation"]::before { content: "groups"; }
+[data-testid="stSidebarNav"] a[href="/Analysis_with_AI"]::before { content: "psychology"; }
+[data-testid="stSidebarNav"] a[href="/Speech_Summary"]::before { content: "record_voice_over"; }
+[data-testid="stSidebarNav"] a[href="/Prediction_History"]::before { content: "history"; }
+[data-testid="stSidebarNav"] a[href="/About"]::before { content: "info"; }
+[data-testid="stSidebarNav"] a[href="/Logout"]::before { content: "logout"; }
+
+.stApp {
+    background: linear-gradient(135deg, #000000, #121212, #1e1e1e);
+    min-height: 100vh;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Glass Container Effect */
+div[data-testid="stForm"],
+div.stButton,
+div[data-testid="stMarkdownContainer"],
+div.element-container,
+div.stDataFrame {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(16px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(200%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    padding: 1.2rem !important;
+    margin: 0.7rem 0 !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Hover Effects */
+div[data-testid="stForm"]:hover,
+div.stButton:hover,
+div[data-testid="stMarkdownContainer"]:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Input Fields */
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input,
+div[data-testid="stDateInput"] input {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 10px !important;
+    padding: 0.7rem 1.2rem !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-size: 0.95rem !important;
+}
+
+/* Input Focus Effects */
+div[data-testid="stTextInput"] input:focus,
+div[data-testid="stNumberInput"] input:focus,
+div[data-testid="stDateInput"] input:focus {
+    border: 1px solid rgba(33, 150, 243, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+}
+
+/* Button Styling */
+button[kind="primaryFormSubmit"] {
+    background: linear-gradient(135deg, #1a73e8, #0052cc) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.7rem 1.4rem !important;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+}
+
+button[kind="primaryFormSubmit"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4) !important;
+    background: linear-gradient(135deg, #1E88E5, #00ACC1) !important;
+}
+
+/* Text Styling */
+.stMarkdown, .stText {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Message Styling */
+div[data-testid="stInfo"] {
+    background: rgba(33, 150, 243, 0.1) !important;
+    border: 1px solid rgba(33, 150, 243, 0.2) !important;
+    color: #2196F3 !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+div[data-testid="stError"] {
+    background: rgba(244, 67, 54, 0.1) !important;
+    border: 1px solid rgba(244, 67, 54, 0.2) !important;
+    color: #f44336 !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+div[data-testid="stSuccess"] {
+    background: rgba(76, 175, 80, 0.1) !important;
+    border: 1px solid rgba(76, 175, 80, 0.2) !important;
+    color: #4CAF50 !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
