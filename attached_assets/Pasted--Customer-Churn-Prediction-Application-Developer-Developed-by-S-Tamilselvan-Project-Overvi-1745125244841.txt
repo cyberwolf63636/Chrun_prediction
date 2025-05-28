@@ -1,0 +1,102 @@
+
+# Customer Churn Prediction Application
+
+## Developer
+Developed by S.Tamilselvan
+
+## Project Overview
+This application predicts customer churn using machine learning algorithms and provides comprehensive analytics tools for business insights.
+
+```mermaid
+graph TD
+    A[Data Upload] --> B[Data Preprocessing]
+    B --> C[Model Training]
+    C --> D[Predictions]
+    D --> E[Visualizations]
+    E --> F[Customer Segmentation]
+    F --> G[AI Analysis]
+    G --> H[Speech Summary]
+    H --> I[Export Results]
+    
+    C --> J[Database Storage]
+    J --> K[Prediction History]
+```
+
+## Application Architecture
+
+### Components Map
+```
+├── Frontend (Streamlit)
+│   ├── Data Upload Interface
+│   ├── Model Training Controls
+│   ├── Interactive Visualizations
+│   ├── Customer Segmentation Tools
+│   └── Export Options
+│
+├── Backend (Python)
+│   ├── Data Processing (utils.py)
+│   ├── ML Models (churn_prediction.py)
+│   ├── Database Operations (database.py)
+│   └── Export Utilities (export_utils.py)
+│
+└── Database (SQLite)
+    ├── User Data
+    ├── Predictions
+    ├── Model Metrics
+    └── Customer Segments
+```
+
+## Features
+- Data upload and preprocessing
+- Multiple ML models (Random Forest, Logistic Regression, Gradient Boosting)
+- Interactive data visualizations
+- Customer segmentation (K-Means, RFM Analysis)
+- AI-powered analysis with Ollama
+- Speech summary generation
+- Secure data storage
+- Export functionality (CSV, PDF)
+
+## Technical Stack
+- **Frontend**: Streamlit
+- **Backend**: Python 3.11
+- **Database**: SQLite
+- **ML Libraries**: scikit-learn, pandas, numpy
+- **Visualization**: Plotly, Matplotlib, Seaborn
+- **Export Tools**: FPDF, ReportLab
+
+## Data Flow
+1. User uploads customer data (CSV format)
+2. Data preprocessing and feature engineering
+3. Model training and validation
+4. Prediction generation
+5. Results visualization
+6. Customer segmentation
+7. AI analysis and insights
+8. Export and storage
+
+## Security Features
+- User authentication
+- Secure data storage
+- Session management
+- Database encryption
+
+## Performance Metrics
+- Model accuracy tracking
+- Prediction history
+- Segmentation effectiveness
+- System response time
+
+## Future Enhancements
+1. Advanced model algorithms
+2. Real-time prediction updates
+3. Enhanced visualization options
+4. API integration capabilities
+5. Automated reporting system
+
+## Contact
+For support and inquiries:
+S.Tamilselvan
+[Contact Information]
+
+## License
+[License Information]

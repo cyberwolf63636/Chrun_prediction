@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction - Documentation</title>
+    <style>
+        :root {
+            --primary: #2962ff;
+            --secondary: #0039cb;
+            --dark: #1a237e;
+            --light: #f5f5f5;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--light);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .developer-info {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .flowchart {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+        }
+        .component-map {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Customer Churn Prediction Application</h1>
+            <p>A comprehensive solution for predicting and analyzing customer churn</p>
+        </div>
+    </header>
+
+    <div class="developer-info">
+        <h2>Developed by S.Tamilselvan</h2>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>This application predicts customer churn using machine learning algorithms and provides comprehensive analytics tools for business insights.</p>
+        </div>
+
+        <div class="section">
+            <h2>Workflow Diagram</h2>
+            <div class="flowchart">
+                <img src="https://mermaid.ink/img/pako:eNp1kc1uwjAQhF_F2nOqhISUhEvVQ6VeWlWVeuEQObsQq4md2g6IRt69TkIF9NDdw37z7Wg96wulShHNUeesWYFX1gWwS2iwcwGVhQ4bjwodVNqihkBr9IHWYLxCJ6wCnSnTH_ckz_k4GUzyPGezfmQ2mM1uXC55Xkxvy-I6EtZj-KMS6Bxa0JiUcUgr0wXy2oBBZQ1SJ1Bq41HHQW8M-ijXtbYOQvTDgRbaRFX26HbaaA-t8F5bFSO4dQG10drg0qNqrEFvDKoI3h9wLTp0jYog1_bQ4Xmpg8Vg_4_fYDj5QXJX8GScjJLkIT0zGaRpkY6n6fQsYYeL6CxYPuB8VBDvRUWUiRer3Qq9wE_RWfT5JrJTzpbWVaKyGNZK2V1k0WKJ3ks2EK3FTjQWGpGIlXlXkXggcqvqIxwRJXrUTWOx3oP7BtvL1_s" alt="Workflow Diagram" style="width: 100%; height: auto;">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Application Architecture</h2>
+            <div class="component-map">
+├── Frontend (Streamlit)
+│   ├── Data Upload Interface
+│   ├── Model Training Controls
+│   ├── Interactive Visualizations
+│   ├── Customer Segmentation Tools
+│   └── Export Options
+│
+├── Backend (Python)
+│   ├── Data Processing (utils.py)
+│   ├── ML Models (churn_prediction.py)
+│   ├── Database Operations (database.py)
+│   └── Export Utilities (export_utils.py)
+│
+└── Database (SQLite)
+    ├── User Data
+    ├── Predictions
+    ├── Model Metrics
+    └── Customer Segments</div>
+        </div>
+
+        <div class="section">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Data Processing</h3>
+                    <p>Upload and preprocess customer data</p>
+                </div>
+                <div class="feature-card">
+                    <h3>ML Models</h3>
+                    <p>Multiple prediction algorithms</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Visualizations</h3>
+                    <p>Interactive data insights</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Segmentation</h3>
+                    <p>Customer grouping tools</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI Analysis</h3>
+                    <p>Ollama-powered insights</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Export Tools</h3>
+                    <p>CSV and PDF exports</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Stack</h2>
+            <ul>
+                <li><strong>Frontend:</strong> Streamlit</li>
+                <li><strong>Backend:</strong> Python 3.11</li>
+                <li><strong>Database:</strong> SQLite</li>
+                <li><strong>ML Libraries:</strong> scikit-learn, pandas, numpy</li>
+                <li><strong>Visualization:</strong> Plotly, Matplotlib, Seaborn</li>
+                <li><strong>Export Tools:</strong> FPDF, ReportLab</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Security Features</h2>
+            <ul>
+                <li>User authentication</li>
+                <li>Secure data storage</li>
+                <li>Session management</li>
+                <li>Database encryption</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Developed by S.Tamilselvan © 2024</p>
+            <p>Contact for support and inquiries</p>
+        </div>
+    </footer>
+</body>
+</html>
